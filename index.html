@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>      
+            <div class="weather">
+                        <h1>各地のお天気は？</h1>
+                        <h2>都市の選択</h2>           
+                        <input type="radio" name="weather" value=0 checked>東京
+                        <input type="radio" name="weather" value="1">ハワイ
+                        <input type="radio" name="weather" value="2">マンチェスター
+                        <button name="submit" onclick="clickbtn()" >click</button>
+                        <h3>現在の天気は</h3>
+                        <div id="iconImg">
+                            
+                        </div>
+                        <!-- <img id="icon" width="100" height="100" src="" alt="" onerror="this.onerror = null; this.src='';"> -->
+                        <p>気温<span id="tem"></span>℃</p>
+                        <p>湿度<span id="hum"></span>%</p>
+            </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
